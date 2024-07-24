@@ -1,0 +1,53 @@
+//Cormoran Upright
+@font-face {
+  font-family: 'Cormoran Upright';
+  src: url(../assets/fonts/Cormorant_Upright/CormorantUpright-Light.ttf);
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormoran Upright';
+  src: url(../assets/fonts/Cormorant_Upright/CormorantUpright-Regular.ttf);
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormoran Upright';
+  src: url(../assets/fonts/Cormorant_Upright/CormorantUpright-Medium.ttf);
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormoran Upright';
+  src: url(../assets/fonts/Cormorant_Upright/CormorantUpright-SemiBold.ttf);
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormoran Upright';
+  src: url(../assets/fonts/Cormorant_Upright/CormorantUpright-Bold.ttf);
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+//Jost
+@font-face {
+  font-family: 'Jost';
+  src: url(../assets/fonts/Jost/Jost-VariableFont_wght.ttf);
+  font-weight: 100 900; /* All weights */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url(../assets/fonts/Jost/Jost-Italic-VariableFont_wght.ttf);
+  font-weight: 100 900; /* All weights */
+  font-style: italic;
+}
+
+$font-header: 'Cormoran Upright', serif;
+$font-body: 'Jost', sans-serif;
