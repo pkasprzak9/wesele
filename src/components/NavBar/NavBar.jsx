@@ -6,8 +6,8 @@ import styles from "./NavBar.module.scss";
 export default function NavBar({ isOpen, setIsOpen }) {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.menuToggle} onClick={setIsOpen}>
-        <FontAwesomeIcon icon={isOpen? faTimes : faBars} className={styles.icon}/>
+      <div className={styles.menuToggle}>
+        <FontAwesomeIcon  onClick={setIsOpen} icon={isOpen? faTimes : faBars} className={styles.icon}/>
       </div>
       <ul className={`${styles.links} ${isOpen && styles.showMenu}`}>
         <li>
