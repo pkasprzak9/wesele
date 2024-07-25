@@ -1,15 +1,26 @@
 @import '../../styles/global.scss';
 
 .navbar {
-  // padding: 1em 2em;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    position: sticky;
+    background-color: $secondary-color;
+    padding: 1em 2em;
+    top: 0;
+    z-index: 1000;
+  }
 }
 
 .menuToggle {
   padding: 1em;
   position: fixed;
   margin: 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .icon {
@@ -37,27 +48,12 @@
     color: $background-color;
     text-decoration: none;
   }
-}
 
-.showMenu {
-  transform: translateX(0);
-}
-
-@media (min-width: 768px) {
-  .navbar {
-    position: sticky;
-    background-color: $secondary-color;
-    padding: 1em 2em;
-    top: 0;
-    z-index: 1000;
-
+  &.showMenu {
+    transform: translateX(0);
   }
 
-  .menuToggle {
-    display: none;
-  }
-
-  .links {
+  @media (min-width: 768px) {
     position: relative;
     transform: translateX(0);
     flex-direction: row;
@@ -71,6 +67,7 @@
 
     a {
       transition: color 0.2s ease-in;
+
       &:hover {
         color: $accent-color;
       }
