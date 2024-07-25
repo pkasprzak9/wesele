@@ -1,0 +1,54 @@
+@import '../../styles/global.scss';
+
+.navbar {
+  padding: 1em 2em;
+  background-color: $secondary-color;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: $background-color;
+}
+
+.links {
+  display: none;
+}
+
+.showMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  font-size: 1.5rem;
+  list-style: none;
+  height: 100svh;
+  text-align: center;
+  padding: 0;
+
+  a {
+    color: $background-color;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .icon {
+    display: none;
+  }
+  .links {
+    padding: 1em 0;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    a {
+      color: $background-color;
+      text-decoration: none;
+    }
+  }
+}
