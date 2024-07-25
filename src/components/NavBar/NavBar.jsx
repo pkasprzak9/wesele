@@ -8,7 +8,7 @@ export default function NavBar({ isOpen, setIsOpen }) {
     <nav className={styles.navbar}>
       <ul className={`${styles.links} ${isOpen && styles.showMenu}`}>
         <li>
-          <a href="#later">Ceremonia</a>
+          <a href="#later">Ceremonia Ślubu</a>
         </li>
         <li>
           <a href="#later">Przyjęcie</a>
