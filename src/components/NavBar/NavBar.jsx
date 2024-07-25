@@ -1,5 +1,37 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import styles from "./NavBar.module.scss";
 
-export default function NavBar() {
-
+export default function NavBar({ isOpen, setIsOpen }) {
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.menuToggle} onClick={setIsOpen}>
+        <FontAwesomeIcon icon={isOpen? faTimes : faBars} className={styles.icon}/>
+      </div>
+      <ul className={`${styles.links} ${isOpen && styles.showMenu}`}>
+        <li>
+          <a href="#later">Wprowadzenie</a>
+        </li>
+        <li>
+          <a href="#later">Ceremonia</a>
+        </li>
+        <li>
+          <a href="#later">Przyjęcie</a>
+        </li>
+        <li>
+          <a href="#later">Plan Uroczystości</a>
+        </li>
+        <li>
+          <a href="#later">Potwierdzenie Obecności</a>
+        </li>
+        <li>
+          <a href="#later">FAQ</a>
+        </li>
+        <li>
+          <a href="#later">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+  );
 }
