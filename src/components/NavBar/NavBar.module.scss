@@ -34,18 +34,18 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .icon {
     display: none;
   }
   .links {
     padding: 1em 0;
     margin: 0 auto;
-    width: 60%;
     display: flex;
     justify-content: space-between;
     list-style: none;
-
+    width: 95%;
+    max-width: 1200px;
     a {
       color: $background-color;
       text-decoration: none;
