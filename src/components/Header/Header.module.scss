@@ -1,0 +1,37 @@
+@import '../../styles/global.scss';
+
+Header {
+  height: 100svh;
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  margin-top: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  text-align: center;
+  color: $background-color;
+  filter: drop-shadow(0 0 5px Black);
+}
+
+.title {
+  margin-top: 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: $background-color;
+  text-align: center;
+  filter: drop-shadow(0 0 5px Black);
+}
+
+.countdown {
+  font-size: 1rem;
+  color: $background-color;
+  text-transform: uppercase;
+  text-align: center;
+  filter: drop-shadow(0 0 5px Black);
+}
