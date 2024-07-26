@@ -49,5 +49,34 @@
   font-style: italic;
 }
 
-$font-header: 'Cormoran Upright', serif;
+// Volkorn SC
+@font-face {
+  font-family: 'Volkorn SC';
+  src: url(../assets/fonts/Vollkorn_SC/VollkornSC-Black.ttf);
+  font-weight: 900; /* Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Volkorn SC';
+  src: url(../assets/fonts/Vollkorn_SC/VollkornSC-Bold.ttf);
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Volkorn SC';
+  src: url(../assets/fonts/Vollkorn_SC/VollkornSC-Regular.ttf);
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Volkorn SC';
+  src: url(../assets/fonts/Vollkorn_SC/VollkornSC-SemiBold.ttf);
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+$font-header: 'Volkorn SC', serif;
 $font-body: 'Jost', sans-serif;
