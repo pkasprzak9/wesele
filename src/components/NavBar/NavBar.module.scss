@@ -7,9 +7,10 @@
   @media (min-width: 800px) {
     position: sticky;
     background-color: $secondary-color;
-    padding: 1em 2em;
     top: 0;
     z-index: 1000;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -74,10 +75,11 @@
 
     .container {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       gap: 2em;
       height: auto;
+      padding: 0;
     }
 
     a {
