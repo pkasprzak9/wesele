@@ -18,7 +18,7 @@ export default function SectionCeremony() {
   return (
     <section className={style.weddingInfo}>
       <div className="container">
-        <p className={style.title}>Ceremonia Ślubna</p>
+        <p className={style.title}>Ślub</p>
         <div className="row">
           <div className={`column ${style.imageWrapper}`}>
             <img
