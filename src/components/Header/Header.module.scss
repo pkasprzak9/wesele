@@ -41,11 +41,17 @@ Header {
 }
 
 .countdown {
+  letter-spacing: 0.1em;
   font-size: 1rem;
   color: $background-color;
   text-transform: uppercase;
   text-align: center;
   filter: drop-shadow(0 0 5px Black);
+
+  h2, h3 {
+    font-family: $font-body;
+    font-weight: 400;
+  }
 }
 
 .moreInfo {
