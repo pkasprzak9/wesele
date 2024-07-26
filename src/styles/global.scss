@@ -10,8 +10,50 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Volkorn', serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 img {
   max-width: 100%;
+}
+
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em 2em;
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 80%;
+    padding: 2em 4em;
+  }
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  gap: 2em;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
+}
+
+.column {
+  width: 100%;
 }
