@@ -12,22 +12,22 @@ export default function NavBar({ isOpen, setIsOpen }) {
       <ul className={`${styles.links} ${isOpen && styles.showMenu}`}>
         <div className={styles.container}>
           <li>
-            <a href="#later">Ceremonia Ślubu</a>
+            <a href="#later">ślub</a>
           </li>
           <li>
-            <a href="#later">Przyjęcie</a>
+            <a href="#later">przyjęcie</a>
           </li>
           <li>
-            <a href="#later">Plan Uroczystości</a>
+            <a href="#later">plan uroczystości</a>
           </li>
           <li>
-            <a href="#later">Potwierdzenie Obecności</a>
+            <a href="#later">hotel</a>
           </li>
           <li>
-            <a href="#later">FAQ</a>
+            <a href="#later">potwierdzenie obecności</a>
           </li>
           <li>
-            <a href="#later">Kontakt</a>
+            <a href="#later">kontakt</a>
           </li>
         </div>
       </ul>
