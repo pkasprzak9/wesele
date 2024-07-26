@@ -27,7 +27,9 @@ export default function NavBar({ isOpen, setIsOpen }) {
   return (
     <nav className={styles.navbar} ref={sidebarRef}>
       <div className={styles.menuToggle}>
-        <FontAwesomeIcon  onClick={setIsOpen} icon={isOpen? faTimes : faBars} className={styles.icon}/>
+        <div className={styles.iconWrapper}>
+          <FontAwesomeIcon  onClick={setIsOpen} icon={isOpen? faTimes : faBars} className={styles.icon}/>
+        </div>
       </div>
       <ul className={`${styles.links} ${isOpen && styles.showMenu}`}>
         <div className={styles.container}>
