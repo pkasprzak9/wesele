@@ -28,7 +28,13 @@
 .icon {
   width: 1.5em;
   height: 1.5em;
-  color: $background-color;
+  color: $accent-color;
+}
+
+.iconWrapper {
+  background-color: $secondary-color;
+  padding: .5em;
+  border-radius: 50%;
 }
 
 .links {
@@ -39,15 +45,17 @@
   font-size: 1.4rem;
   list-style: none;
   height: 100vh;
-  max-width: 60%;
+  max-width: 70%;
   background-color: $accent-color;
   padding: 3em 1em;
   z-index: 999;
+  border-right: 5px solid $secondary-color;
+  border-radius: 0 1em 1em 0;
 
   .container {
-    gap: 1.2em;
     display: flex;
     flex-direction: column;
+    gap: 1.2em;
   }
 
   a {
@@ -87,6 +95,7 @@
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 0.15em;
+      text-align: center;
 
       display: inline-block;
       padding: .9375rem 1.25rem;
