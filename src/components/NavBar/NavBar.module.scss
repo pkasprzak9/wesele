@@ -1,0 +1,87 @@
+@import '../../styles/global.scss';
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    position: sticky;
+    background-color: $secondary-color;
+    padding: 1em 2em;
+    top: 0;
+    z-index: 1000;
+  }
+}
+
+.menuToggle {
+  padding: 1em;
+  position: fixed;
+  margin: 0;
+  z-index: 1000;
+
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: $background-color;
+}
+
+.links {
+  position: fixed;
+  transform: translateX(-100vw);
+  transition: transform 0.5s ease-in;
+  margin: 0;
+  font-size: 1.4rem;
+  list-style: none;
+  height: 100vh;
+  max-width: 60%;
+  background-color: $secondary-color;
+  padding: 3em 1em;
+
+  .container {
+    gap: 1.2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: $background-color;
+    text-decoration: none;
+  }
+
+  &.showMenu {
+    transform: translateX(0);
+  }
+
+  @media (min-width: 800px) {
+    position: relative;
+    transition: none;
+    transform: translateX(0);
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+    max-width: 1200px;
+    height: auto;
+    font-size: 1rem;
+
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2em;
+      height: auto;
+    }
+
+    a {
+      transition: color 0.2s ease-in;
+      text-align: center;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
