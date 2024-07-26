@@ -52,6 +52,11 @@ Header {
     font-family: $font-body;
     font-weight: 400;
   }
+
+  .number{
+    color: $accent-color;
+    font-weight: 600;
+  }
 }
 
 .moreInfo {
