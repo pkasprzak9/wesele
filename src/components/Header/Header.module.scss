@@ -55,8 +55,8 @@ Header {
 }
 
 .moreInfo {
-  position: fixed;
-  bottom: 2%;
+  position: absolute;
+  bottom: 10px;
   font-size: 1rem;
   color: $accent-color;
   text-transform: uppercase;
@@ -64,6 +64,10 @@ Header {
   animation: bounce 2s infinite;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 800px) {
+    bottom: -20px;
+  }
 
   p {
     margin: 0;
