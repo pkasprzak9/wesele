@@ -12,22 +12,22 @@ export default function NavBar({ isOpen, setIsOpen }) {
       <ul className={`${styles.links} ${isOpen && styles.showMenu}`}>
         <div className={styles.container}>
           <li>
-            <a href="#later">ślub</a>
+            <a href="#later" onClick={setIsOpen}>ślub</a>
           </li>
           <li>
-            <a href="#later">przyjęcie</a>
+            <a href="#later" onClick={setIsOpen}>przyjęcie</a>
           </li>
           <li>
-            <a href="#later">plan uroczystości</a>
+            <a href="#later" onClick={setIsOpen}>plan uroczystości</a>
           </li>
           <li>
-            <a href="#later">hotel</a>
+            <a href="#later" onClick={setIsOpen}>hotel</a>
           </li>
           <li>
-            <a href="#later">potwierdzenie obecności</a>
+            <a href="#later" onClick={setIsOpen}>potwierdzenie obecności</a>
           </li>
           <li>
-            <a href="#later">kontakt</a>
+            <a href="#later" onClick={setIsOpen}>kontakt</a>
           </li>
         </div>
       </ul>
