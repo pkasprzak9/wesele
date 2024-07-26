@@ -1,4 +1,24 @@
+@import "../../../styles/global.scss";
+
+.weddingInfo {
+  color: $secondary-color;
+}
+
+.title {
+  font-size: 2em;
+  margin: 1em 0;
+  color: $secondary-color;
+}
+
 .image {
-  border-radius: 1em;
+  border-radius: .5em;
   box-shadow: 0 0 .5em rgba(0, 0, 0, 0.9);
+}
+
+@media (min-width: 800px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
