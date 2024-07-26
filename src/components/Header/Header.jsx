@@ -1,5 +1,7 @@
 import React from "react";
 import style from "./Header.module.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header({ timeLeft }) {
   if (!timeLeft) return null;
@@ -15,6 +17,11 @@ export default function Header({ timeLeft }) {
         <h3>Minuty: {timeLeft.minutes}</h3>
         <h3>Sekundy: {timeLeft.seconds}</h3>
       </div>
+
+      <div className={style.moreInfo}>
+        <FontAwesomeIcon icon={faChevronUp} />
+        <p>zobacz więcej</p>
+        </div>
     </header>
   );
 }
