@@ -8,7 +8,7 @@ export default function Header({ timeLeft }) {
 
   return (
     <header className={style.Header}>
-      <p className={style.intro}>Piotrek & Asia Zapraszają na</p>
+      <p className={style.intro}>Joanna i Piotr zapraszają na</p>
       <h1 className={style.title}>Ceremonię Zaślubin</h1>
       <div className={style.countdown}>
         <h2>Pozostało</h2>
