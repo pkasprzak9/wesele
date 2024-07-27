@@ -1,6 +1,7 @@
 import React, { useRef, useEffect} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import styles from "./NavBar.module.scss";
 
 export default function NavBar({ isOpen, setIsOpen }) {
@@ -33,22 +34,22 @@ export default function NavBar({ isOpen, setIsOpen }) {
       </div>
       <ul className={`${styles.links} ${isOpen && styles.showMenu}`}>
         <li>
-          <a href="#later" onClick={setIsOpen}>ślub</a>
+          <Link to="ceremony" smooth={true} duration={500} onClick={setIsOpen}>ślub</Link>
         </li>
         <li>
-          <a href="#later" onClick={setIsOpen}>przyjęcie</a>
+          <Link to="reception" smooth={true} duration={500} onClick={setIsOpen}>przyjęcie</Link>
         </li>
         <li>
-          <a href="#later" onClick={setIsOpen}>plan uroczystości</a>
+          <Link to="reception" smooth={true} duration={500} onClick={setIsOpen}>plan uroczystości</Link>
         </li>
         <li>
-          <a href="#later" onClick={setIsOpen}>hotel</a>
+          <Link to="reception" smooth={true} duration={500} onClick={setIsOpen}>hotel</Link>
         </li>
         <li>
-          <a href="#later" onClick={setIsOpen}>potwierdzenie obecności</a>
+          <Link to="reception" smooth={true} duration={500} onClick={setIsOpen}>potwierdzenie obecności</Link>
         </li>
         <li>
-          <a href="#later" onClick={setIsOpen}>kontakt</a>
+          <Link to="reception" smooth={true} duration={500}>kontakt</Link>
         </li>
       </ul>
     </nav>
