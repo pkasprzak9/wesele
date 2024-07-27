@@ -3,12 +3,6 @@
 @import './fonts';
 @import './variables';
 
-html {
-  @media (min-width: 960px) {
-    font-size: 18px;
-  }
-}
-
 body {
   font-family: $font-body;
   background-color: $accent-color;
