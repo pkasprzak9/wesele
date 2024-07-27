@@ -16,6 +16,10 @@
   @include map;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .title {
   font-family: $font-header;
   color: $secondary-color;
