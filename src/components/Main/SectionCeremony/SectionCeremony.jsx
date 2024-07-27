@@ -22,6 +22,7 @@ export default function SectionCeremony() {
             <p className={styles.description}>
               Ceremonia odbędzie się w pięknej Katedrze w Łowiczu, znanej ze swojej wyjątkowej architektury i niepowtarzalnej atmosfery. Zapraszamy serdecznie wszystkich naszych bliskich do wspólnego świętowania.
             </p>
+            {/* TODO: add functionality to add event to the calendar */}
             <p>Aby nie zapomnieć, <span className={styles.underline}>dodaj datę do swojego kalendarza</span>.</p>
           </div>
           <div className={styles.column}>
