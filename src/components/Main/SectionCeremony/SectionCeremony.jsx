@@ -4,17 +4,6 @@ import style from "./SectionCeremony.module.scss";
 
 export default function SectionCeremony() {
 
-  const images = {
-    church: {
-      src: require("../../../assets/images/placeholder.jpeg"),
-      alt: "Katedra w Łowiczu"
-    },
-    // wedding: {
-    //   src: require("../../../assets/images/wedding.jpg"),
-    //   alt: "Ślub"
-    // }
-  }
-
   return (
     <section className={style.weddingInfo}>
       <div className={style.container}>
