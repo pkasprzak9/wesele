@@ -7,7 +7,7 @@ export default function Header({ timeLeft }) {
   if (!timeLeft) return null;
 
   return (
-    <header className={style.Header}>
+    <header className={style.Header} id="header">
       <p className={style.intro}>Joanna i Piotr zapraszają na</p>
       <h1 className={style.title}>Ceremonię Zaślubin</h1>
       <div className={style.countdown}>
