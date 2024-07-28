@@ -1,0 +1,54 @@
+@import "../../../styles/global.scss";
+
+
+.container {
+  @include container;
+
+  & {
+    padding-top: 1em
+  }
+}
+
+.row {
+  @include row;
+}
+
+.column {
+  @include column;
+}
+
+.plan {
+  background-color: $primary-color;
+}
+
+.card {
+  background-color: $accent-color;
+  color: $primary-color;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, 0.9);
+  padding: 1em 1.5em;
+  margin: 0 auto;
+  border-radius: 1em;
+}
+
+.title {
+  text-decoration: underline;
+  font-weight: 700;
+  text-align: center;
+
+  @media (max-width: 960px) {
+    font-size: 1.6em;
+  }
+}
+
+.dayTitle {
+  text-align: start;
+
+  @media (max-width: 960px) {
+    font-size: 1.3em;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
