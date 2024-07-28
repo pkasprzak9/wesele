@@ -1,7 +1,3 @@
-Rozumiem, oto poprawiona wersja README.md bez użycia specjalnych bloków kodu:
-
----
-
 # Wedding Website
 
 ## Struktura Projektu
