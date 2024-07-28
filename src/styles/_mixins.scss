@@ -11,11 +11,7 @@
 
 @mixin row {
   display: flex;
-  flex-direction: column;
   gap: 2em;
-  @media (min-width: 800px) {
-    flex-direction: row;
-  }
 }
 
 @mixin column {
