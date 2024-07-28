@@ -3,7 +3,7 @@ import styles from "./SectionPlan.module.scss";
 
 export default function SectionPlan() {
     return (
-        <section className={styles.plan}>
+        <section className={styles.plan} id="plan">
           <div className={styles.container}>
             <div className={styles.card}>
               <h2 className={styles.title}>Plan Uroczystości</h2>

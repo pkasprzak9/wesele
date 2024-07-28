@@ -41,7 +41,7 @@ export default function NavBar({ isOpen, setIsOpen }) {
           <Link to="reception" smooth={true} duration={500} onClick={setIsOpen}>przyjęcie</Link>
         </li>
         <li>
-          <Link to="reception" smooth={true} duration={500} onClick={setIsOpen}>plan uroczystości</Link>
+          <Link to="plan" smooth={true} duration={500} onClick={setIsOpen}>plan uroczystości</Link>
         </li>
         <li>
           <Link to="reception" smooth={true} duration={500} onClick={setIsOpen}>hotel</Link>
