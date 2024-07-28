@@ -5,7 +5,7 @@ import styles from "./SectionReception.module.scss";
 export default function SectionCeremony() {
 
   return (
-    <section className={styles.receptionInfo} id="reception">
+    <section className={styles.reception} id="reception">
       <div className={styles.container}>
         <p className={styles.title}>Przyjęcie</p>
         <div className={styles.row}>

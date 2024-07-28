@@ -10,6 +10,12 @@
 
 .row {
   @include row;
+
+  &{
+    @media (max-width: 960px) {
+      flex-direction: column;
+    }
+  }
 }
 
 .map {
