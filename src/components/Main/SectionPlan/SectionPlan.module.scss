@@ -3,10 +3,6 @@
 
 .container {
   @include container;
-
-  & {
-    padding-top: 1em
-  }
 }
 
 .row {
