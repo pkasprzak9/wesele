@@ -18,6 +18,13 @@
   }
 }
 
+.ceremony {
+  @media (max-width: 960px) {
+    background-image: url("../../../assets/images/beautiful-watercolor-floral-arrangement.png");
+    background-size: cover;
+  }
+}
+
 .map {
   @include map;
 }
