@@ -15,6 +15,7 @@
 
 .plan {
   background-color: $primary-color;
+  font-family: $font-header;
 }
 
 .card {
@@ -24,12 +25,25 @@
   padding: 1em 1.5em;
   margin: 0 auto;
   border-radius: 1em;
+  font-weight: 900;
+  p {
+    margin-top: 0;
+    font-size: 1.6em;
+    color: $secondary-color;
+  }
+}
+
+.textWrapper {
+  @media (min-width: 960px) {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+  }
 }
 
 .title {
-  text-decoration: underline;
-  font-weight: 700;
   text-align: center;
+  margin-bottom: 2em;
 
   @media (max-width: 960px) {
     font-size: 1.6em;
@@ -37,14 +51,9 @@
 }
 
 .dayTitle {
-  text-align: start;
-
   @media (max-width: 960px) {
     font-size: 1.3em;
   }
 }
 
-p {
-  margin-top: 0;
-}
 
