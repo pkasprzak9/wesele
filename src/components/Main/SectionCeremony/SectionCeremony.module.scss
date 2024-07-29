@@ -59,3 +59,11 @@
     filter: drop-shadow(0 0 .5em rgba(0, 0, 0, 0.9));
   }
 }
+
+.calendarLink {
+  color: $accent-color;
+
+  &:hover {
+    color: $background-color;
+  }
+}
