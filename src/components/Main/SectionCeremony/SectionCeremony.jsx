@@ -11,7 +11,7 @@ export default function SectionCeremony() {
         <div className={styles.row}>
           <div className={`${styles.column} ${styles.details} ${styles.card}`}>
             <p className={styles.dateTime}>
-              <strong>Data<br/></strong> 20 sierpnia 2024 <br />
+              <strong>Data<br/></strong> 5 października 2024 <br />
               <strong>Godzina<br/></strong> 15:00
             </p>
             <p className={styles.location}>
