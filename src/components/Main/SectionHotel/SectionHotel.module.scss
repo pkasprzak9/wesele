@@ -6,7 +6,6 @@
 
 .row {
   @include row;
-  justify-content: center;
 
   @media (min-width: 960px) {
     justify-content: space-between;
@@ -38,9 +37,6 @@
 .title {
   text-align: center;
   color: $primary-color;
-  @media (max-width: 960px) {
-    font-size: 1.6em;
-  }
 }
 
 .text {

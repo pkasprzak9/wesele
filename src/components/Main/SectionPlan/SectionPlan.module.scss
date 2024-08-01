@@ -15,7 +15,6 @@
     padding: 1em 1.5em;
     margin: 0 auto;
     border-radius: 1em;
-    font-weight: 900;
     text-align: center;
     max-width: 900px;
 
@@ -26,24 +25,22 @@
     }
 
     .textWrapper {
+      font-size: 1.1em;
       @media (min-width: 960px) {
         display: flex;
         justify-content: center;
         gap: 10em;
+        font-size: 1.2em;
       }
     }
 
     .title {
       margin-bottom: 2em;
-
-      @media (max-width: 960px) {
-        font-size: 1.6em;
-      }
     }
 
     .dayTitle {
+      font-weight: 900;
       @media (max-width: 960px) {
-        font-size: 1.3em;
         text-align: start;
       }
     }
