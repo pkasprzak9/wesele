@@ -1,0 +1,19 @@
+@import "../../../styles/global.scss";
+
+.container {
+  @include container;
+}
+
+.presence {
+  background-color: $primary-color;
+  color: $background-color;
+}
+
+.title {
+  text-align: center;
+}
+.text {
+  text-align: center;
+  margin-top: 1rem;
+}
+

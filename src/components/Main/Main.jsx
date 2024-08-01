@@ -3,6 +3,7 @@ import SectionCeremony from "./SectionCeremony/SectionCeremony";
 import SectionReception from "./SectionReception/SectionReception";
 import SectionPlan from "./SectionPlan/SectionPlan";
 import SectionHotel from "./SectionHotel/SectionHotel";
+import SectionPresence from "./SectionPresence/SectionPresence";
 
 export default function Main(){
     return (
@@ -11,6 +12,7 @@ export default function Main(){
             <SectionReception />
             <SectionPlan />
             <SectionHotel />
+            <SectionPresence />
         </main>
     );
 }
