@@ -6,7 +6,7 @@
 
 .presence {
   background-color: $primary-color;
-  color: $background-color;
+  color: $accent-color;
 }
 
 .title {
@@ -16,4 +16,44 @@
   text-align: center;
   margin-top: 1rem;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 2em auto;
+  width: 50%;
 
+  @media (max-width: 960px) {
+    width: 90%;
+  }
+}
+
+.formInput {
+  padding: 1em;
+  border: 2px solid $secondary-color;
+  border-radius: .5em;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 0.5rem $secondary-color);
+
+  &:focus {
+    outline: none;
+    border-color: $background-color;
+  }
+}
+
+.submit {
+  padding: 1em;
+  border: 2px solid $secondary-color;
+  border-radius: .5em;
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 0.5rem $secondary-color);
+  background-color: $secondary-color;
+  color: $background-color;
+  cursor: pointer;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: $primary-color;
+    transform: scale(.99);
+  }
+}
