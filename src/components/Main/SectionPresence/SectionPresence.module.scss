@@ -19,4 +19,10 @@
 .text {
   text-align: center;
   margin-top: 1rem;
+  width: 90%;
+  margin: 0 auto;
+
+  @media (min-width: 960px) {
+    width: 70%;
+  }
 }
