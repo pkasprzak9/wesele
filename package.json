@@ -2,6 +2,10 @@
   "name": "wesele",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.11.1",
+    "npm": "10.8.1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
@@ -13,11 +17,11 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
     "sass": "^1.77.8",
-    "web-vitals": "^2.1.4",
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "serve -s build",
