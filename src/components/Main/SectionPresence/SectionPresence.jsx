@@ -7,7 +7,7 @@ export default function SectionPresence() {
       <div className={styles.container}>
         <h2 className={styles.title}>Potwierdzenie obecności</h2>
         <p className={styles.text}>
-          Prosimy o potwierdzenie obecności do 30 sierpnia 2024 r. telefonicznie bądź drogą mailową.
+        Prosimy o potwierdzenie obecności do 22 sierpnia 2024 r. telefonicznie lub mailowo. Przy potwierdzaniu prosimy o podanie ewentualnych specjalnych wymagań dietetycznych (np. wegańska, bezglutenowa).
         </p>
       </div>
     </section>
