@@ -7,15 +7,15 @@ export default function Header({ timeLeft }) {
   if (!timeLeft) return null;
 
   return (
-    <header className={style.Header}>
-      <p className={style.intro}>Piotrek & Asia Zapraszają na</p>
+    <header className={style.Header} id="header">
+      <p className={style.intro}>Joanna i Piotr zapraszają na</p>
       <h1 className={style.title}>Ceremonię Zaślubin</h1>
       <div className={style.countdown}>
         <h2>Pozostało</h2>
-        <h3>Dni: <span className={style.number}>{timeLeft.days}</span></h3>
-        <h3>Godziny: <span className={style.number}>{timeLeft.hours}</span></h3>
-        <h3>Minuty: <span className={style.number}>{timeLeft.minutes}</span></h3>
-        <h3>Sekundy: <span className={style.number}>{timeLeft.seconds}</span></h3>
+        <p>Dni: <span className={style.number}>{timeLeft.days}</span></p>
+        <p>Godziny: <span className={style.number}>{timeLeft.hours}</span></p>
+        <p>Minuty: <span className={style.number}>{timeLeft.minutes}</span></p>
+        <p>Sekundy: <span className={style.number}>{timeLeft.seconds}</span></p>
       </div>
 
       <div className={style.moreInfo}>

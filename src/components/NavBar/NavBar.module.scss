@@ -4,12 +4,13 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 800px) {
+  @media (min-width: 960px) {
     position: sticky;
     background-color: $secondary-color;
-    padding: 1em 2em;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
+    margin: 0;
+    padding: .5em 0
   }
 }
 
@@ -17,9 +18,9 @@
   padding: 1em;
   position: fixed;
   margin: 0;
-  z-index: 1000;
+  z-index: 2;
 
-  @media (min-width: 800px) {
+  @media (min-width: 960px) {
     display: none;
   }
 }
@@ -27,27 +28,33 @@
 .icon {
   width: 1.5em;
   height: 1.5em;
-  color: $background-color;
+  color: $accent-color;
+}
+
+.iconWrapper {
+  background-color: $secondary-color;
+  padding: .5em;
+  border-radius: 50%;
+  box-shadow: 0 0 .5em $secondary-color;
 }
 
 .links {
+  background-color: $accent-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
   position: fixed;
-  transform: translateX(-100vw);
-  transition: transform 0.5s ease-in;
   margin: 0;
   font-size: 1.4rem;
   list-style: none;
   height: 100vh;
-  max-width: 60%;
-  background-color: $accent-color;
-  padding: 3em 1em;
-  z-index: 999;
-
-  .container {
-    gap: 1.2em;
-    display: flex;
-    flex-direction: column;
-  }
+  max-width: 70%;
+  padding: 4em 1.5em;
+  z-index: 1;
+  border-radius: 0 1em 1em 0;
+  border-right: 5px solid $secondary-color;
+  transform: translateX(-100vw);
+  transition: transform 0.5s ease-in;
 
   a {
     color: $primary-color;
@@ -60,33 +67,57 @@
     transform: translateX(0);
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 960px) {
     position: relative;
     transition: none;
-    transform: translateX(0);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    padding: 0;
     width: 80%;
     max-width: 1200px;
-    height: auto;
     font-size: 1rem;
     background-color: $secondary-color;
+    gap: 2em;
+    height: auto;
+    padding: 0;
+    transform: translateX(0);
 
-    .container {
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 2em;
-      height: auto;
-    }
 
     a {
+      cursor: pointer;
       color: $background-color;
-      transition: color 0.2s ease-in;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.15em;
       text-align: center;
-      letter-spacing: 0.1em;
+
+      display: inline-block;
+      padding: .9em 1em;
+      position: relative;
+      transition: color 0.3s ease;
 
       &:hover {
         color: $accent-color;
+      }
+
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: $accent-color;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+
+      &:hover:after {
+        color: $accent-color;
+        width: 100%;
+        left: 0;
       }
     }
   }

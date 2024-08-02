@@ -49,14 +49,14 @@
 - **assets**: Zawiera zasoby takie jak fonty i obrazy.
   - **fonts**: Foldery zawierające pliki fontów używanych w projekcie.
   - **images**: Zawiera obrazy używane w projekcie.
-  
+
 - **components**: Zawiera komponenty React.
   - **Header**: Przykładowy komponent nagłówka, zawierający pliki Header.js i Header.module.scss.
   - **NavBar**: Przykładowy komponent paska nawigacyjnego.
-  
+
 - **containers**: Zawiera kontenery React, które mogą zarządzać stanem aplikacji.
   - **Header**: Przykładowy kontener nagłówka.
-  
+
 - **styles**: Folder na globalne style projektu.
 
 ## Konfiguracja Stylów
@@ -147,3 +147,6 @@ export default Header;
 3. Zainstaluj zależności: `npm install`
 4. Uruchom projekt: `npm start`
 ```
+
+
+Images By: https://www.freepik.com/free-ai-image/beautiful-watercolor-floral-arrangement_186698611.htm#fromView=search&page=1&position=10&uuid=830e6d9e-e24c-4db7-9e5e-c2288d8cca87

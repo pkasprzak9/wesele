@@ -22,33 +22,42 @@ Header {
 }
 
 .intro {
-  margin-top: 0;
-  font-size: 1.2rem;
+  max-width: 90%;
+  color: $accent-color;
   text-transform: uppercase;
-  letter-spacing: .5em;
   text-align: center;
-  color: $background-color;
+  letter-spacing: .5em;
+  line-height: 1.5;
   filter: drop-shadow(0 0 5px Black);
+
+  @media (min-width: 960px) {
+    max-width: 90%;
+  }
 }
 
 .title {
-  margin-top: 0;
-  font-size: 3rem;
-  text-transform: uppercase;
   color: $background-color;
+  text-transform: uppercase;
+  font-size: 3rem;
   text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 0;
   filter: drop-shadow(0 0 5px Black);
+
+  @media (min-width: 960px) {
+    max-width: 90%;
+    font-size: 4rem;
+  }
 }
 
 .countdown {
   letter-spacing: 0.1em;
-  font-size: 1rem;
   color: $background-color;
   text-transform: uppercase;
   text-align: center;
   filter: drop-shadow(0 0 5px Black);
 
-  h2, h3 {
+  h2 {
     font-family: $font-body;
     font-weight: 400;
   }
@@ -59,16 +68,17 @@ Header {
   }
 }
 
+// TODO: work on vanishing the text when user scrolls down (not very important)
+// and sticking to the bottom on desktop
 .moreInfo {
-  position: absolute;
-  bottom: 10px;
-  font-size: 1rem;
   color: $accent-color;
-  text-transform: uppercase;
-  text-align: center;
-  animation: bounce 2s infinite;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  text-transform: uppercase;
+  text-align: center;
+  bottom: 5px;
+  animation: bounce 2s infinite;
 
   p {
     margin: 0;

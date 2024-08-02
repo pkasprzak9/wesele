@@ -1,0 +1,45 @@
+@import "../../../styles/global.scss";
+
+.container {
+  @include container;
+}
+
+.row {
+  @include row;
+
+  @media (min-width: 960px) {
+    justify-content: space-between;
+    max-width: 250px;
+  }
+}
+
+.sectionHotel {
+  color: $secondary-color;
+  background-image: url("../../../assets/images/beautiful-watercolor-floral-arrangement.png");
+  background-size: cover;
+}
+
+.card {
+  background-color: $accent-color;
+  color: $primary-color;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.9);
+  padding: 1em 1.5em;
+  margin: 0 auto;
+  border-radius: 1em;
+  font-weight: 700;
+  max-width: 900px;
+
+  @media (max-width: 960px) {
+   text-align: center;
+  }
+}
+
+.title {
+  text-align: center;
+  color: $primary-color;
+}
+
+.text {
+  width: 80%;
+  margin: 0 auto;
+}
