@@ -47,10 +47,10 @@ export default function NavBar({ isOpen, setIsOpen }) {
           <Link to="hotel" smooth={true} duration={500} onClick={setIsOpen}>hotel</Link>
         </li>
         <li>
-          <Link to="reception" smooth={true} duration={500} onClick={setIsOpen}>potwierdzenie obecności</Link>
+          <Link to="confirm" smooth={true} duration={500} onClick={setIsOpen}>potwierdzenie obecności</Link>
         </li>
         <li>
-          <Link to="reception" smooth={true} duration={500}>kontakt</Link>
+          <Link to="contact" smooth={true} duration={500} onClick={setIsOpen}>kontakt</Link>
         </li>
       </ul>
     </nav>

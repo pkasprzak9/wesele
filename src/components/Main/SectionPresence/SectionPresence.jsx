@@ -3,7 +3,7 @@ import styles from "./SectionPresence.module.scss";
 
 export default function SectionPresence() {
   return (
-    <section className={styles.presence}>
+    <section className={styles.presence} id="confirm">
       <div className={styles.container}>
         <h2 className={styles.title}>Potwierdzenie obecności</h2>
         <p className={styles.text}>
