@@ -2,6 +2,7 @@ import React from "react";
 import style from "./Header.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-scroll';
 
 export default function Header({ timeLeft }) {
   if (!timeLeft) return null;
@@ -20,7 +21,7 @@ export default function Header({ timeLeft }) {
 
       <div className={style.moreInfo}>
         <FontAwesomeIcon icon={faChevronUp} />
-        <p>zobacz więcej</p>
+        <p><Link to="ceremony" smooth={true} duration={500}>zobacz więcej</Link></p>
         </div>
     </header>
   );
