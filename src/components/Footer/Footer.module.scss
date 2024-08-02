@@ -14,6 +14,7 @@
   a {
     color: $accent-color;
     transition: color 0.3s;
+    text-decoration: none;
 
     &:hover {
       color: $background-color;
