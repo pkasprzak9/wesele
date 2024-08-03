@@ -9,8 +9,8 @@ export default function SectionContact() {
         <div className={styles.row}>
           <div className={`${styles.col} ${styles.text}`}>
             <span className={styles.highlight}>Telefon</span><br />
-            Piotr: <a href="tel:+48 509 109 440">+48 509 109 440</a><br />
             Joanna: <a href="tel:+48 721 108 947">+48 721 108 947</a><br />
+            Piotr: <a href="tel:+48 509 109 440">+48 509 109 440</a>
           </div>
           <div className={`${styles.col} ${styles.text}`}>
             <span className={styles.highlight}>E-mail</span><br />
