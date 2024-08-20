@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Header from "../../components/Header/Header";
 
 export default function ContainerHeader() {
@@ -30,10 +30,15 @@ export default function ContainerHeader() {
   })
 
   const [clickCounter, setClickCounter] = useState(0);
+  const timerRef = useRef(null);
   const handleClick = () => {
+    if (clickCounter === 0) {
+      timerRef.current = setTimeout(() => {
+        setClickCounter(0);
+      }, 120000);
+    };
     setClickCounter(prevCounter => {
       const newCounter = prevCounter + 1;
-      console.log(newCounter);
       return newCounter;
     })
   }
