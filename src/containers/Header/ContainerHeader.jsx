@@ -29,8 +29,17 @@ export default function ContainerHeader() {
     return () => clearTimeout(timer);
   })
 
+  const [clickCounter, setClickCounter] = useState(0);
+  const handleClick = () => {
+    setClickCounter(prevCounter => {
+      const newCounter = prevCounter + 1;
+      console.log(newCounter);
+      return newCounter;
+    })
+  }
+
   return (
-    <Header timeLeft={timeLeft}>
+    <Header timeLeft={timeLeft} onClick={handleClick} clickCounter={clickCounter}>
     </Header>
   );
 }
