@@ -13,7 +13,7 @@ export default function Main(){
             <SectionReception />
             <SectionPlan />
             <SectionHotel />
-            <SectionPresence />
+            {/* <SectionPresence /> */}
             <SectionContact />
         </main>
     );
