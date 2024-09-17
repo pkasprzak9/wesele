@@ -19,7 +19,7 @@ export default function SectionHotel() {
             </div>
             <div className={styles.row}>
               <p className={styles.description}>Wymeldowanie:</p>
-              <p className={styles.time}>-</p>
+              <p className={styles.time}>14:00</p>
           </div>
           </div>
         </div>
