@@ -8,18 +8,18 @@ export default function SectionHotel() {
         <div className={styles.card}>
           <h2 className={styles.title}>Hotel</h2>
           <div className={styles.text}>
-            <p className={styles.info}>Tutaj pojawią się informacje dotyczące zakwaterowania.</p>
+            <p className={styles.info}>Po odbiór kart należy zgłosić się do recepcji.</p>
             <div className={styles.row}>
               <p className={styles.description}>Zameldowanie:</p>
               <p className={styles.time}>12:00</p>
             </div>
             <div className={styles.row}>
               <p className={styles.description}>Śniadanie:</p>
-              <p className={styles.time}>Do godziny 10:00</p>
+              <p className={styles.time}>7:00 - 10:00</p>
             </div>
             <div className={styles.row}>
               <p className={styles.description}>Wymeldowanie:</p>
-              <p className={styles.time}>14:00</p>
+              <p className={styles.time}>14:30</p>
           </div>
           </div>
         </div>

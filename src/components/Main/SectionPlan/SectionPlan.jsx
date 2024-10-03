@@ -22,7 +22,7 @@ export default function SectionPlan() {
             <div className={styles.daySection}>
               <h3 className={styles.dayTitle}>Dzień 2</h3>
               <div className={styles.row}>
-                <p className={styles.time}>14:00</p>
+                <p className={styles.time}>14:30</p>
                 <p className={styles.description}>Poprawiny</p>
               </div>
             </div>
